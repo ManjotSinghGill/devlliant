@@ -7,6 +7,6 @@ export type SVGProps = {
 };
 
 export type SocialItem = {
-  title: 'Github' | 'LinkedIn' | 'Upwork';
+  title: "Github" | "LinkedIn" | "Upwork";
   href: string;
 };

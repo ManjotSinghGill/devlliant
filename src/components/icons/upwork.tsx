@@ -1,11 +1,26 @@
-import { SVGProps } from '@/types';
-import { FC } from 'react';
+import { FC } from "react";
+import { SVGProps } from "../../types";
 
-const Upwork: FC<SVGProps> = ({ fill = '#FFFFFF', stroke = '#FFFFFF', height = 30, width = 30 }) => {
+const Upwork: FC<SVGProps> = ({
+  fill = "#FFFFFF",
+  stroke = "#FFFFFF",
+  height = 30,
+  width = 30,
+}) => {
   return (
-    <svg viewBox="0 0 48 48" height={height} width={width} xmlns="http://www.w3.org/2000/svg" fill="#000000">
+    <svg
+      viewBox="0 0 48 48"
+      height={height}
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="#000000"
+    >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
       <g id="SVGRepo_iconCarrier">
         <path
           fill="none"

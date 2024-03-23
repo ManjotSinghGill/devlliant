@@ -1,11 +1,26 @@
-import { SVGProps } from '@/types';
-import { FC } from 'react';
+import { FC } from "react";
+import { SVGProps } from "../../types";
 
-const LinkedIn: FC<SVGProps> = ({ fill = '#FFFFFF', stroke = '#000000', height = 30, width = 30 }) => {
+const LinkedIn: FC<SVGProps> = ({
+  fill = "#FFFFFF",
+  stroke = "#000000",
+  height = 30,
+  width = 30,
+}) => {
   return (
-    <svg viewBox="0 0 24 24" height={height} width={width} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      viewBox="0 0 24 24"
+      height={height}
+      width={width}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
       <g id="SVGRepo_iconCarrier">
         <path
           d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"

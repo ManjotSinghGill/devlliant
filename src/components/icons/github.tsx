@@ -1,11 +1,26 @@
-import { SVGProps } from '@/types';
-import { FC } from 'react';
+import { FC } from "react";
+import { SVGProps } from "../../types";
 
-const Github: FC<SVGProps> = ({ fill = '#FFFFFF', stroke = '#FFFFFF', height = 30, width = 30 }) => {
+const Github: FC<SVGProps> = ({
+  fill = "#FFFFFF",
+  stroke = "#FFFFFF",
+  height = 30,
+  width = 30,
+}) => {
   return (
-    <svg viewBox="0 0 48 48" height={height} width={width} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      viewBox="0 0 48 48"
+      height={height}
+      width={width}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
       <g id="SVGRepo_iconCarrier">
         <rect width="48" height="48" fill="white" fillOpacity="0.01"></rect>
         <path
