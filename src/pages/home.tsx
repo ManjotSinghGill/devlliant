@@ -1,22 +1,19 @@
-import { Github, Hyphen, LinkedIn, Upwork } from '@/components/icons';
-import { aboutMeContent, navList, socialList } from '@/data';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Github, Hyphen, LinkedIn, Upwork } from "../components/icons";
+import { navList, socialList, aboutMeContent } from "../data";
 
-const resolveSocialIcons = (type: (typeof socialList)[number]['title']) => {
+const resolveSocialIcons = (type: (typeof socialList)[number]["title"]) => {
   switch (type) {
-    case 'Github':
+    case "Github":
       return <Github />;
-    case 'LinkedIn':
+    case "LinkedIn":
       return <LinkedIn />;
-    case 'Upwork':
+    case "Upwork":
       return <Upwork />;
     default:
       return <Github />;
   }
 };
-
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <div className="container mx-auto px-4">
@@ -35,13 +32,13 @@ export default function Home() {
                 <ul>
                   {navList?.map((item, index) => (
                     <li>
-                      <Link href={item.href}>
+                      <a href={item.href}>
                         <span className="flex items-center gap-2">
                           {`0${index + 1}`}
                           <Hyphen />
                           <span className="underline">{item.title}</span>
                         </span>
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -49,28 +46,28 @@ export default function Home() {
               <div className="static lg:absolute mt-20 lg:mt-0 lg:left-0 lg:bottom-5 xxl:bottom-20 lg:right-0">
                 <ul>
                   <li className="inline-block me-5">
-                    <Link href={'/'} target="_blank">
+                    <a href={"/"} target="_blank">
                       <span className="flex items-center gap-2">
-                        <Image
+                        <img
                           height={30}
                           width={30}
                           className="rounded"
                           src={
-                            'https://media.licdn.com/dms/image/D5603AQEUJr6OTD7_eQ/profile-displayphoto-shrink_800_800/0/1711115344980?e=1716422400&v=beta&t=ACrS7Q4xsCWH1mF3HNu3Kjp1HlzdIyPCL7GdHcKxAMM'
+                            "https://media.licdn.com/dms/image/D5603AQEUJr6OTD7_eQ/profile-displayphoto-shrink_800_800/0/1711115344980?e=1716422400&v=beta&t=ACrS7Q4xsCWH1mF3HNu3Kjp1HlzdIyPCL7GdHcKxAMM"
                           }
                           alt=""
                         />
                       </span>
-                    </Link>
+                    </a>
                   </li>
                   {socialList?.map((item) => (
                     <li className="inline-block me-5">
-                      <Link href={item.href} target="_blank">
+                      <a href={item.href} target="_blank">
                         <span className="flex items-center gap-2">
                           {resolveSocialIcons(item.title)}
                           <p>{item.title}</p>
                         </span>
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -97,4 +94,5 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+export default Home;
