@@ -2,7 +2,6 @@ import { FC } from "react";
 import { SVGProps } from "../../types";
 
 const Upwork: FC<SVGProps> = ({
-  fill = "#FFFFFF",
   stroke = "#FFFFFF",
   height = 30,
   width = 30,

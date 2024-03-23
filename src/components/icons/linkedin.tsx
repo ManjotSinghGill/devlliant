@@ -3,7 +3,6 @@ import { SVGProps } from "../../types";
 
 const LinkedIn: FC<SVGProps> = ({
   fill = "#FFFFFF",
-  stroke = "#000000",
   height = 30,
   width = 30,
 }) => {

@@ -3,7 +3,6 @@ import { SVGProps } from "../../types";
 
 const Github: FC<SVGProps> = ({
   fill = "#FFFFFF",
-  stroke = "#FFFFFF",
   height = 30,
   width = 30,
 }) => {
